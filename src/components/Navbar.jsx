@@ -114,7 +114,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg px-6 py-6 flex justify-between items-center z-10 transition-all duration-300 ease-in-out">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg px-6 py-6 flex justify-between items-center z-10 transition-all duration-300 ease-in-out z-50 overflow-hidden">
       {/* Logo Image */}
       <Link to="/">
         <img src={'/dash2.png'} alt="Dashboard Logo" className="h-12 w-44 " />
