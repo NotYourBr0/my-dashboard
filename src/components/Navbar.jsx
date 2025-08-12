@@ -135,7 +135,7 @@ export default function Navbar() {
           ref={resourcesDropdownRef}
         >
           <div
-            className="hover:text-blue-500 transition-colors duration-200 ease-in-out relative group flex items-center gap-1 cursor-pointer"
+            className="hover:text-blue-500 transition-colors duration-200 ease-in-out relative group flex z-10 items-center gap-1 cursor-pointer"
             onClick={toggleResourcesDropdown} // Click handler for desktop dropdown
           >
             Resources
