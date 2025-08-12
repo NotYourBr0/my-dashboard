@@ -114,7 +114,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg px-6 py-6 flex justify-between items-center z-10 transition-all duration-300 ease-in-out z-50 overflow-hidden">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg px-6 py-6 flex justify-between items-center transition-all duration-300 ease-in-out z-50 ">
       {/* Logo Image */}
       <Link to="/">
         <img src={'/dash2.png'} alt="Dashboard Logo" className="h-12 w-44 " />
@@ -135,7 +135,7 @@ export default function Navbar() {
           ref={resourcesDropdownRef}
         >
           <div
-            className="hover:text-blue-500 transition-colors duration-200 ease-in-out relative group flex z-10 items-center gap-1 cursor-pointer"
+            className="hover:text-blue-500 transition-colors duration-200 ease-in-out relative group flex  items-center gap-1 cursor-pointer"
             onClick={toggleResourcesDropdown} // Click handler for desktop dropdown
           >
             Resources
@@ -146,7 +146,7 @@ export default function Navbar() {
             </svg>
           </div>
           <div
-            className={`absolute left-0 top-full mt-2 bg-white rounded-lg shadow-xl p-2 w-48 transition-opacity duration-200 z-20 ${
+            className={`absolute left-0 top-full mt-2 bg-white rounded-lg shadow-xl p-2 w-48 transition-opacity duration-200 z-10 ${
               isResourcesDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
           >

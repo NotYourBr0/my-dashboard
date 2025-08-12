@@ -211,7 +211,7 @@ if (!user || !user.id) {
   const rightColumnFaqs = filteredFaqs.slice(half);
 
   return (
-    <div className="min-h-screen animate-fade-in">
+    <div className="min-h-screen animate-fade-in over">
       <div className="max-w-7xl mx-auto">
         <style>
           {`
