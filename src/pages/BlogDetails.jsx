@@ -31,8 +31,66 @@ export default function BlogDetails() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-lg text-gray-600">Loading blog...</p>
+       <div className="h-screen flex items-center justify-center bg-gray-100">
+        <style>
+          {`
+          @keyframes pulse-main {
+            0%, 100% {
+              transform: scale(1);
+              opacity: 1;
+            }
+            50% {
+              transform: scale(1.2);
+              opacity: 0.7;
+            }
+          }
+          @keyframes pulse-alt {
+            0%, 100% {
+              transform: scale(0.9);
+              opacity: 0.5;
+            }
+            50% {
+              transform: scale(1.1);
+              opacity: 1;
+            }
+          }
+          @keyframes rotate {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          .spinner-container {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            animation: rotate 2s linear infinite;
+          }
+          .spinner-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+          .spinner-main {
+            border: 6px solid #4a90e2; /* Blue color */
+            animation: pulse-main 2s infinite ease-in-out;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          }
+          .spinner-alt {
+            border: 6px solid #50e3c2; /* Cyan color */
+            animation: pulse-alt 2s infinite ease-in-out;
+            animation-delay: -1s; /* Start with a delay */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          }
+          `}
+        </style>
+        <div className="spinner-container">
+          <div className="spinner-inner spinner-main"></div>
+          <div className="spinner-inner spinner-alt"></div>
+        </div>
       </div>
     );
   }
