@@ -43,7 +43,7 @@ This project provides a centralized dashboard to manage and update content dynam
 
 ## <img width="18" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" /> Live Demo
 
-**Frontend:** [https://my-dashboard-jade-nu.vercel.app/](https://my-dashboard-jade-nu.vercel.app/)  
+**Frontend:** [https://mykdash.vercel.app/](https://mykdash.vercel.app/)  
 **GitHub Repo:** [https://github.com/NotYourBr0/my-dashboard](https://github.com/NotYourBr0/my-dashboard)
 
 ---
